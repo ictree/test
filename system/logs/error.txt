@@ -1,0 +1,39 @@
+2014-02-09 3:02:03 - PHP Notice:  Undefined index: address_1 in /Library/WebServer/Documents/opencart/catalog/controller/account/register.php on line 396
+2014-02-09 3:02:03 - PHP Notice:  Undefined index: city in /Library/WebServer/Documents/opencart/catalog/controller/account/register.php on line 400
+2014-02-09 3:02:03 - PHP Notice:  Undefined index: country_id in /Library/WebServer/Documents/opencart/catalog/controller/account/register.php on line 406
+2014-02-09 3:02:03 - PHP Notice:  Undefined index: country_id in /Library/WebServer/Documents/opencart/catalog/controller/account/register.php on line 421
+2014-02-09 3:02:03 - PHP Notice:  Undefined index: password in /Library/WebServer/Documents/opencart/catalog/controller/account/register.php on line 429
+2014-02-09 3:02:03 - PHP Notice:  Undefined index: confirm in /Library/WebServer/Documents/opencart/catalog/controller/account/register.php on line 433
+2014-02-09 3:02:03 - PHP Notice:  Undefined index: password in /Library/WebServer/Documents/opencart/catalog/controller/account/register.php on line 433
+2014-02-16 17:30:01 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:01 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:01 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:01 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:01 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:01 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:01 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:01 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:31 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:31 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:31 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:31 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:31 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:31 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:31 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:31 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Notice:  Use of undefined constant s - assumed 's' in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
+2014-02-16 17:30:32 - PHP Warning:  Division by zero in /Library/WebServer/Documents/opencart/catalog/view/theme/default/template/product/product.tpl on line 52
