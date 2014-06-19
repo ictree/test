@@ -20,6 +20,21 @@ class ControllerCommonHome extends Controller {
 			'common/footer',
 			'common/header'
 		);
+
+        // Menu ouput
+        $this->load->model('catalog/category');
+        $categories = $this->model_catalog_category->getCategories(0);
+
+        foreach ($categories as $category) {
+            if ($category['top']) {
+                // Level 1
+                $this->data['categories'][] = array(
+                    'name'     => $category['name'],
+                    'column'   => $category['column'] ? $category['column'] : 1,
+                    'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
+                );
+            }
+        }
 										
 		$this->response->setOutput($this->render());
 	}
