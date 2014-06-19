@@ -1,0 +1,244 @@
+.Categorys-bd{
+	display: none;
+}
+.Categorys-hd h2{
+	border: none;
+}
+#refilter{
+	width: 208px;
+	border: 1px solid #ddd;
+}
+.mt{
+	height: 31px;
+	padding-left: 8px;
+	background: #f7f7f7;
+	line-height: 31px;
+}
+.mt h2{
+	color: #333;
+}
+.mc{
+	width: 208px;
+	border-top: 1px solid #ddd;
+}
+.item{
+	padding: 0 10px;
+}
+#refilter .item ul{
+	overflow: hidden;
+	padding: 4px 0;
+	zoom:1;
+}
+#refilter .item li{
+	position: relative;
+	height: 50px;
+	padding: 8px 0 8px 70px;
+	border-top: 1px dotted #dedede;
+}
+#refilter .item .fore1{
+	border-top: 0;
+}
+#refilter .item li .p-img{
+	position: absolute;
+	left: 0;
+	padding: 0;
+}
+#refilter .item li a{
+	padding: 0 2px 2px;
+}
+.right-extra{
+	position: relative;
+}
+.product-view .product-image{
+	background: #fff;
+	border:1px solid #cbd1d6;
+	width: 176px;
+	height: 176px;
+	padding: 0;
+	text-align: center;
+	overflow: hidden;
+}
+.product-image{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.product-view .product-image img{
+	max-width: 176px;
+	max-height: 176px;
+	vertical-align: middle;
+}
+.product-view{
+	position: relative;
+	width: 100%;
+	padding-left: 205px;
+}
+.product-name{
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #ccc;
+}
+.product-shop{
+	width: 460px;
+}
+.product-shop h1{
+	font:700 18px/1.6em Arial,Verdana,"microsoft yahei";
+}
+.product-attr{
+	padding: 10px 0;
+}
+.summary{
+	padding-left: 10px;
+}
+.summary li{
+	padding: 6px 0;
+	overflow: hidden;
+	clear: both;
+}
+.product-attr .dt{
+	float: left;
+}
+.product-attr .dd{
+	float: left;
+}
+.product-attr .dd table tr{
+	padding: 0 10px;
+	height: 22px;
+	line-height: 22px;
+}
+.product-attr .nm,.product-attr .pr{
+	width: 160px;
+	padding: 0 10px;
+}
+.product-attr .ln1{
+	background: #f1f1f1;
+}
+.product-attr .ds{
+	width: 90px;
+}
+.dd input,.inpt{
+	height: 26px;
+	line-height: 26px;
+}
+.inpt span{
+	padding-left: 20px;
+}
+.actions{
+	padding-top: 10px;
+	border-top:1px dotted #ddd;
+}
+.detail-tools{
+	overflow: hidden;
+}
+.detail-tools .btn{
+	float: left;
+	margin-top: 8px;
+	height: 38px;
+}
+.actions a,.tabs-detail a{
+	transition:none;
+	-moz-transition:none; /* Firefox 4 */
+	-webkit-transition:none; /* Safari and Chrome */
+	-o-transition:none; /* Opera */
+}
+.btn-append,.btn-append-none{
+	width: 135px;
+	height: 36px;
+	line-height: 1000px;
+	text-align: center;
+	color: #fff;
+	background: #e4393c;
+	background-image: url(../images/button.png);
+	background-repeat: no-repeat;
+	border: none;
+	overflow: hidden;
+	display: block;
+}
+.detail-tools .btn-append{
+	background-position: -157px 0;
+}
+.btn-append:hover{
+	background-position: 0 0;
+}
+.btn-append-none{
+	display: none;
+	background-position: -314px 0;
+}
+.btn-coll{
+	margin-left: 10px;
+	width: 72px;
+	height: 37px;
+	background-image: url(../images/button.png);
+	background-repeat: no-repeat;
+	background-position: 0 -42px;
+	line-height: 1000px;
+	overflow: hidden;
+	display: block;
+}
+.btn-coll:hover{
+	background-position: -157px -42px;
+}
+.btn-come{
+	margin-left: 10px;
+	width: 88px;
+	height: 37px;
+	background-image: url(../images/button.png);
+	background-position: 0 -88px;
+	background-repeat: no-repeat;
+	line-height: 1000px;
+	overflow: hidden;
+	display: none;
+}
+.btn-come:hover{
+	background-position: -157px -88px;
+}
+.product-detail{
+	margin-top: 20px;
+}
+.tabs-detail{
+	border-bottom: 2px solid #009763;
+	height: 30px;
+}
+.tabs-detail li{
+	float: left;
+	width: 150px;
+	text-align: center;
+}
+.tabs-detail a{
+	display: block;
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	background: #f5f5f5;
+}
+.tabs-detail a.selected,.tabs-detail a:hover{
+	background: #009763;
+	color: #fff;
+	line-height: 30px;
+}
+.tabs-content-detail{
+	padding: 10px 20px;
+}
+.param,.trans{
+	display: none;
+}
+.service{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	text-align: center;
+}
+.service p{
+	color: #666;
+	font-weight: 800;
+}
+.sevenday,.free-post,.onlie-service{
+	margin-top: 10px;
+}
+.sevenday img,.free-post img,.onlie-service img{
+	width: 42px;
+	height: 42px;
+}
+.onlie-service a:hover p{
+	color: #009763!important;
+}
