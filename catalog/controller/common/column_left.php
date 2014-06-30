@@ -19,19 +19,19 @@ class ControllerCommonColumnLeft extends Controller {
 				
 			$layout_id = $this->model_catalog_category->getCategoryLayoutId(end($path));			
 		}
-		
+
 		if ($route == 'product/product' && isset($this->request->get['product_id'])) {
 			$layout_id = $this->model_catalog_product->getProductLayoutId($this->request->get['product_id']);
 		}
-		
+
 		if ($route == 'information/information' && isset($this->request->get['information_id'])) {
 			$layout_id = $this->model_catalog_information->getInformationLayoutId($this->request->get['information_id']);
 		}
-		
+
 		if (!$layout_id) {
 			$layout_id = $this->model_design_layout->getLayout($route);
 		}
-						
+
 		if (!$layout_id) {
 			$layout_id = $this->config->get('config_layout_id');
 		}
@@ -40,11 +40,11 @@ class ControllerCommonColumnLeft extends Controller {
 		
 		$this->load->model('setting/extension');
 		
-		$extensions = $this->model_setting_extension->getExtensions('module');		
-		
+		$extensions = $this->model_setting_extension->getExtensions('module');
+
 		foreach ($extensions as $extension) {
 			$modules = $this->config->get($extension['code'] . '_module');
-		
+
 			if ($modules) {
 				foreach ($modules as $module) {
 					if ($module['layout_id'] == $layout_id && $module['position'] == 'column_left' && $module['status']) {
@@ -57,7 +57,7 @@ class ControllerCommonColumnLeft extends Controller {
 				}
 			}
 		}
-		
+
 		$sort_order = array(); 
 	  
 		foreach ($module_data as $key => $value) {
@@ -67,7 +67,7 @@ class ControllerCommonColumnLeft extends Controller {
 		array_multisort($sort_order, SORT_ASC, $module_data);
 		
 		$this->data['modules'] = array();
-		
+
 		foreach ($module_data as $module) {
 			$module = $this->getChild('module/' . $module['code'], $module['setting']);
 			

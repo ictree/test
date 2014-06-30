@@ -92,7 +92,7 @@
         <div class="logo">
             <h1>
                 <a href="/" target="_self" class="logo-bd">
-                    <img src="catalog/view/theme/ictree/image/logo.gif" width="110" height="110" alt="得捷电子商城" title="得捷电子商城">
+                    <img src="catalog/view/theme/ictree/image/logo.png" width="132" height="48"  alt="得捷电子商城" title="得捷电子商城">
                 </a>
             </h1>
         </div>

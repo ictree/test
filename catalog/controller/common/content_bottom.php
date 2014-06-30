@@ -41,10 +41,10 @@ class ControllerCommonContentBottom extends Controller {
 		$this->load->model('setting/extension');
 		
 		$extensions = $this->model_setting_extension->getExtensions('module');		
-		
+
 		foreach ($extensions as $extension) {
 			$modules = $this->config->get($extension['code'] . '_module');
-			
+
 			if ($modules) {
 				foreach ($modules as $module) {
 					if ($module['layout_id'] == $layout_id && $module['position'] == 'content_bottom' && $module['status']) {
@@ -67,7 +67,7 @@ class ControllerCommonContentBottom extends Controller {
 		array_multisort($sort_order, SORT_ASC, $module_data);
 		
 		$this->data['modules'] = array();
-		
+
 		foreach ($module_data as $module) {
 			$module = $this->getChild('module/' . $module['code'], $module['setting']);
 			

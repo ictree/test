@@ -11,7 +11,7 @@ class ModelAccountCustomer extends Model {
 		
 		$customer_group_info = $this->model_account_customer_group->getCustomerGroup($customer_group_id);
 		
-      	$this->db->query("INSERT INTO " . DB_PREFIX . "customer SET store_id = '" . (int)$this->config->get('config_store_id') . "', firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "', telephone = '" . $this->db->escape($data['telephone']) . "', fax = '" . $this->db->escape($data['fax']) . "', salt = '" . $this->db->escape($salt = substr(md5(uniqid(rand(), true)), 0, 9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "', newsletter = '" . (isset($data['newsletter']) ? (int)$data['newsletter'] : 0) . "', customer_group_id = '" . (int)$customer_group_id . "', ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "', status = '1', approved = '" . (int)!$customer_group_info['approval'] . "', date_added = NOW()");
+      	$this->db->query("INSERT INTO " . DB_PREFIX . "customer SET store_id = '" . (int)$this->config->get('config_store_id') . "', firstname = '" . $this->db->escape($data['accountName']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['contactName']) . "', telephone = '" . $this->db->escape($data['company']) . "', fax = '" . $this->db->escape($data['fax']) . "', salt = '" . $this->db->escape($salt = substr(md5(uniqid(rand(), true)), 0, 9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "', newsletter = '" . (isset($data['newsletter']) ? (int)$data['newsletter'] : 0) . "', customer_group_id = '" . (int)$customer_group_id . "', ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "', status = '1', approved = '" . (int)!$customer_group_info['approval'] . "', date_added = NOW()");
       	
 		$customer_id = $this->db->getLastId();
 			
@@ -37,7 +37,7 @@ class ModelAccountCustomer extends Model {
 		$message .= $this->language->get('text_services') . "\n\n";
 		$message .= $this->language->get('text_thanks') . "\n";
 		$message .= $this->config->get('config_name');
-		
+		/*
 		$mail = new Mail();
 		$mail->protocol = $this->config->get('config_mail_protocol');
 		$mail->parameter = $this->config->get('config_mail_parameter');
@@ -52,8 +52,9 @@ class ModelAccountCustomer extends Model {
 		$mail->setSubject(html_entity_decode($subject, ENT_QUOTES, 'UTF-8'));
 		$mail->setText(html_entity_decode($message, ENT_QUOTES, 'UTF-8'));
 		$mail->send();
-		
+		*/
 		// Send to main admin email if new account email is enabled
+        /*
 		if ($this->config->get('config_account_mail')) {
 			$message  = $this->language->get('text_signup') . "\n\n";
 			$message .= $this->language->get('text_website') . ' ' . $this->config->get('config_name') . "\n";
@@ -83,6 +84,7 @@ class ModelAccountCustomer extends Model {
 				}
 			}
 		}
+        */
 	}
 	
 	public function editCustomer($data) {
@@ -189,7 +191,7 @@ class ModelAccountCustomer extends Model {
 		
 		$query = $this->db->query($sql);
 		
-		return $query->rows;	
+		return $query->rows;
 	}
 		
 	public function getTotalCustomersByEmail($email) {
