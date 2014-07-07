@@ -32,6 +32,7 @@ $_['text_home']               = '首页';
 
 // Button
 $_['button_insert']           = '新增';
+$_['button_import']           = '导入';
 $_['button_delete']           = '删除';
 $_['button_save']             = '保存';
 $_['button_cancel']           = '取消';

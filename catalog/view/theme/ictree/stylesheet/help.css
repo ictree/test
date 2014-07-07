@@ -1,0 +1,29 @@
+.ml{
+	border-top: 1px solid #ddd;
+}
+.right-extra{
+	margin-right: 20px;
+	width: 738px;
+	border-width: 2px 1px 1px 1px;
+	border-style: solid;
+	border-color: #009763 #ddd #ddd #ddd;
+	box-shadow: 0 1px 10px #cfcfcf;
+}
+.right-extra h1{
+	margin: 0 40px 0 40px;
+	border-bottom: 1px dotted #ddd;
+}
+.right-wrap{
+	padding: 10px 40px 0 40px;
+	color: #666;
+}
+.right-wrap p{
+	line-height: 20px;
+}
+.help-title{
+	font-size: 14px;
+	font-weight: 900;
+}
+.help-cont{
+	margin: 10px 0;
+}

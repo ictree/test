@@ -1,0 +1,63 @@
+.right-extra>p{
+	margin-bottom: 10px;
+	padding-left: 15px;
+	height: 33px;
+	line-height: 33px;
+	color: #009763;
+	font-size: 14px;
+	background: #f7f7f7;
+	border:1px solid #e6e6e6;
+	border-bottom: 2px solid #009763;
+}
+.right-wrap{
+	padding: 20px 15px;
+	border:1px solid #e6e6e6;
+}
+.item{
+	min-height: 40px;
+	line-height: 40px;
+}
+.class-lefe .item ul{
+	margin-bottom: 15px;
+}
+.right-wrap .item span{
+	float: left;
+	margin-right: 8px;
+	width: 100px;
+	color: #666;
+	text-align: right;
+}
+.right-wrap .item input{
+	margin: 0 5px 0 0;
+	padding: 4px;
+	width: 175px;
+	font-size: 12px;
+	border:1px solid;
+	border-color: #aaa #ddd #ddd #aaa;
+}
+/*我的订单*/
+.right-wrap{
+	padding: 0!important;
+}
+.tb-void{
+	text-align: left;
+}
+.tb-void .tb-heade th,.tb-void .tb-wrap td{
+	padding: 0 10px;
+}
+.tb-void .tb-heade{
+	height: 30px;
+	line-height: 30px;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ededed;
+}
+.tb-void .tb-wrap{
+	border-bottom: 1px solid #ededed;
+}
+.tb-void .tb-wrap td{
+	height: 60px;
+	border-right: 1px solid #ededed;
+}
+.tb-wrap .order-doi a{
+	padding-right: 10px;
+}

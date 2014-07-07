@@ -1,3 +1,4 @@
+/*公共样式*/
 blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{
 	margin:0;padding:0;
 }
@@ -27,7 +28,11 @@ a{
 	-o-transition:all 0.5s; /* Opera */
 }
 a:hover{
+	color: rgb(16,183,140);
 	text-decoration:none;
+}
+.clearfix{
+	display: block;
 }
 fieldset,img{
 	margin: 0;
@@ -39,7 +44,13 @@ button,input,select,textarea{
 table{
 	border-collapse:collapse;border-spacing:0;
 }
-
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+	margin: 10px auto;
+}
 
 header,article{
 	width: 100%;
@@ -172,8 +183,8 @@ a{
 }
 .logo{
 	float: left;
-	width: 132px;
-	height: 94px;
+	width: 180px;
+	height: 66px;
 	margin-left: -100%;
 	display: inline;
 	overflow: hidden;
@@ -302,14 +313,14 @@ a{
 	text-align: center;
 }
 .wrap-service{
-	margin-top: 20px;
-	padding: 0 20px;
+	padding: 10px 20px;
+	border-top: 1px solid #dedede;
 	overflow: hidden;
 }
 .wrap-service dl{
 	float: left;
-	width: 80px;
-	padding: 0 55px;
+	width: 90px;
+	padding: 0 45px;
 }
 .wrap-service dt{
 	padding: 6px 0;
@@ -329,11 +340,37 @@ footer{
 	width: 100%;
 	border-top: 1px solid #F1F1F1;
 }
+.ic-footer{
+	margin-top: 20px;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.ic-footer em{
+	color: #f00;
+	font-weight: 700;
+}
+.mod_agree_item1,.mod_agree_item2{
+	float: left;
+	padding: 0 10px;
+	color: #666;
+	font-size: 14px;
+}
+.mod_agree_item1 i,.mod_agree_item2 i{
+	float: left;
+	margin-right: 8px;
+	width: 18px;
+	height: 23px;
+	background-image: url(../image/footer-ico.jpg);
+}
+.mod_agree_item2 i{
+	width: 24px;
+	height: 23px;
+	background-position: 24px 0;
+}
 .links,.copyright{
 	height: 25px;
 	line-height: 25px;
 	color: #666;
-	text-align: center;
 }
 .links{
 	color: #888;
@@ -343,4 +380,40 @@ footer{
 }
 .links a:hover,.wrap-service a:hover{
 	color: rgb(16,183,140);
+}
+.o-btn{
+	padding: 8px 30px;
+	color: #EFF8F5;
+	font-size: 14px;
+	background: #0ead76;
+	border-radius: 4px;
+}
+.o-btn:hover{
+	color: #fff;
+	background: #1BC98C;
+}
+.sf_verify{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.sf_verify_lk_1, .sf_verify_lk_2{
+	overflow: hidden;
+	display: inline-block;
+	zoom: 1;
+	width: 121px;
+	height: 46px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-indent: -9999px;
+	vertical-align: top;
+}
+.sf_verify_lk_1{
+	background-image: url(../image/u90.png);
+}
+.sf_verify_lk_2{
+	background-image: url(../image/u92.png);
+}
+.footer-lk{
+	text-align: left;
 }

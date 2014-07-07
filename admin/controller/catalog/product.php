@@ -1,7 +1,102 @@
 <?php 
+
+function findNum($str=''){
+    $str=trim($str);
+
+    if(empty($str)){return '';}
+    $result='';
+    for($i=0;$i<strlen($str);$i++){
+        if(is_numeric($str[$i]) || $str[$i]=='.' ){
+            $result.=$str[$i];
+        }
+    }
+    return $result;
+}
+
+
 class ControllerCatalogProduct extends Controller {
 	private $error = array(); 
      
+        public function import() {
+
+
+            if (isset($_FILES['userfile']['name'])) {
+                $inputFileName = DIR_DOWNLOAD . basename($_FILES['userfile']['name']);
+
+                if (move_uploaded_file($_FILES['userfile']['tmp_name'], $inputFileName)) {
+                    $this->load->model('catalog/product');
+                    set_include_path(get_include_path() . PATH_SEPARATOR . DIR_SYSTEM . 'EXCEL/');
+                    include 'PHPExcel/IOFactory.php';
+
+                    $objPHPExcel = PHPExcel_IOFactory::load($inputFileName);
+                    $sheetData = $objPHPExcel->getActiveSheet()->toArray(null,true,true,true);
+                    unset($sheetData[1]);
+
+                    foreach ($sheetData as $data) {
+                        $post = array(
+                            'price' => findNum($data['G']),
+                            'product_store' => array(0),
+                            'product_description' => array(
+                                array(),
+                                array(
+                                    'name' => $data['C'],
+                                    'description' => 'des'
+                                )
+                            ),
+                            'status' => 1,
+                            'product_category' => array(66)
+                        );
+                        //var_dump($post);
+                        $this->model_catalog_product->addProduct($post);
+
+                    }
+
+                    echo '导入成功';exit;
+                    /*
+                    $post = array(
+                        'price' => 99,
+                        'product_store' => array(0),
+                        'product_description' => array(
+                            array(),
+                            array(
+                                'name' => '导入1',
+                                'description' => 'des'
+                            )
+                        ),
+                        'status' => 1,
+                        'product_category' => array(66)
+
+                        //'sort_order' => 1,
+                        //'date_available' => '2014-04-06',
+                        //'quantity' => 1,
+                        //'model' => 'ttt',
+                        //'minimum' => 1,
+                        //'tax_class_id' => 0,
+                        //'subtract' => 1,
+                        //'stock_status_id' => 5,
+                        //'shipping' => 1,
+                        //'length_class_id' => 1,
+                        //'weight_class_id' => 1,
+                        //'manufacturer_id' => 0,
+                        //'category' => '压力',
+                    );
+                    */
+                } else {
+                    echo "Possible file upload attack!\n";
+                }
+
+            }
+
+            $this->data['import_url'] = $this->url->link('catalog/product/import', 'token=' . $this->session->data['token'], 'SSL');
+            $this->template = 'catalog/product_import.tpl';
+            $this->children = array(
+                'common/header',
+                'common/footer'
+            );
+
+            $this->response->setOutput($this->render());
+        }
+        
   	public function index() {
 		$this->language->load('catalog/product');
     	
@@ -320,8 +415,9 @@ class ControllerCatalogProduct extends Controller {
 			'href'      => $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . $url, 'SSL'),       		
       		'separator' => ' :: '
    		);
-		
-		$this->data['insert'] = $this->url->link('catalog/product/insert', 'token=' . $this->session->data['token'] . $url, 'SSL');
+
+        $this->data['import'] = $this->url->link('catalog/product/import', 'token=' . $this->session->data['token'] . $url, 'SSL');
+        $this->data['insert'] = $this->url->link('catalog/product/insert', 'token=' . $this->session->data['token'] . $url, 'SSL');
 		$this->data['copy'] = $this->url->link('catalog/product/copy', 'token=' . $this->session->data['token'] . $url, 'SSL');	
 		$this->data['delete'] = $this->url->link('catalog/product/delete', 'token=' . $this->session->data['token'] . $url, 'SSL');
     	
@@ -400,7 +496,8 @@ class ControllerCatalogProduct extends Controller {
 		$this->data['column_status'] = $this->language->get('column_status');		
 		$this->data['column_action'] = $this->language->get('column_action');		
 				
-		$this->data['button_copy'] = $this->language->get('button_copy');		
+		$this->data['button_copy'] = $this->language->get('button_copy');
+        $this->data['button_import'] = $this->language->get('button_import');
 		$this->data['button_insert'] = $this->language->get('button_insert');		
 		$this->data['button_delete'] = $this->language->get('button_delete');		
 		$this->data['button_filter'] = $this->language->get('button_filter');

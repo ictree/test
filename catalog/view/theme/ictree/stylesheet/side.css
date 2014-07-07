@@ -1,0 +1,50 @@
+/*个人中心公共样式*/
+.ftx04, .flk04 a:link, .flk04 a:visited, a.flk04:link, a.flk04:visited{
+	color: #f00;
+}
+.Categorys-bd{
+	display: none;
+}
+.Categorys-bd li h3, .Categorys-hd h2{
+	border: none;
+}
+.class-lefe{
+	float: left;
+	width: 160px;
+}
+#refilter{
+	width: 158px;
+	border:1px solid #ddd;
+	border-top: 2px solid #999;
+}
+.class-lefe .mt{
+	padding-left: 8px;
+	height: 31px;
+	line-height: 31px;
+	background: #f7f7f7;
+}
+.class-lefe .mt h3{
+	color: #333;
+	font-size: 14px;
+	font-weight: normal;
+}
+#refilter .item ul{
+	padding: 4px 0 4px 24px;
+	overflow: hidden;
+}
+#refilter .item li{
+	padding: 0 4px 0 0;
+	height: 24px;
+}
+.right-extra{
+	margin-left: 20px;
+	width: 810px;
+}
+.clr{
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}

@@ -10,7 +10,7 @@ h1{
 .Categorys-bd{
 	display: none;
 }
-.Categorys-hd h2{
+.Categorys-bd li h3, .Categorys-hd h2{
 	border: none;
 }
 .crumb{
@@ -116,6 +116,9 @@ tr.tr02{
 	color: #fff;
 	background: #62b23f;
 	border-radius: 2px;
+}
+.buy:hover{
+	color: #fff;
 }
 .pages-container{
 	overflow: hidden;

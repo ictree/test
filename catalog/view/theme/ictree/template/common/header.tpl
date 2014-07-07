@@ -16,7 +16,7 @@
     <?php foreach ($links as $link) { ?>
     <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
     <?php } ?>
-    <link rel="stylesheet" type="text/css" href="catalog/view/theme/ictree/stylesheet/style.css" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/ictree/stylesheet/style-min.css" />
     <link rel="stylesheet" type="text/css" href="catalog/view/theme/ictree/stylesheet/class.css" />
     <link rel="stylesheet" type="text/css" href="catalog/view/theme/ictree/stylesheet/public.css" />
 
@@ -92,7 +92,7 @@
         <div class="logo">
             <h1>
                 <a href="/" target="_self" class="logo-bd">
-                    <img src="catalog/view/theme/ictree/image/logo.png" width="132" height="48"  alt="得捷电子商城" title="得捷电子商城">
+                    <img src="catalog/view/theme/ictree/image/logo.png" width="180"  alt="得捷电子商城" title="得捷电子商城">
                 </a>
             </h1>
         </div>

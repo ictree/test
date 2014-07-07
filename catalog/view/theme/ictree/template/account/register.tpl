@@ -88,20 +88,22 @@
     </div>
 </article>
 <footer>
-    <div class="links">
-        <a href="#">关于德捷电子</a> |
-        <a href="#">网站地图</a> |
-        <a href="#">联系我们</a> |
-        <a href="#">人才招聘</a> |
-        <a href="#">供应商申请</a> |
-        <a href="#">媒体报道</a> |
-        <a href="#">业内动态</a> |
-        <a href="#">友情链接</a> |
-        <a href="#">建议与投诉</a> |
-        <a href="#">电子百科</a>
-    </div>
-    <div class="copyright">
-        Copyright © 2014 德捷电子 All Rights Reserved
+    <div class="main">
+        <div class="sf_verify">
+            <a target="_blank" class="sf_verify_lk_1" href="#">经营性网站备案</a>
+            <a target="_blank" class="sf_verify_lk_2" href="#">诚信网站</a>
+        </div>
+        <div class="footer-lk">
+            <div class="links">
+                <a href="#">返回首页</a> |
+                <a href="#">关于我们</a> |
+                <a href="#">联系我们</a> |
+                <a href="#">加入我们</a> |
+            </div>
+            <div class="copyright">
+                Copyright © 2007-2016 | CTree 川ICP备0xxxx号  极氪科技有限公司版权所有
+            </div>
+        </div>
     </div>
 </footer>
 
