@@ -1,7 +1,5 @@
 <?php echo $header; ?>
-<!--
-<?php echo $column_left; ?>
--->
+<?php //echo $column_left; ?>
 
 <div id="content" class="main">
     <div class="crumb">
@@ -18,24 +16,16 @@
                 </div>
                 <div class="mc">
                     <div class="item">
-                        <ul>
-                            <li>
-                                <a href="#">单片机</a>
-                            </li>
-                            <li>
-                                <a href="#">板到板连接器</a>
-                            </li>
-                        </ul>
+                        待确定
                     </div>
                 </div>
             </div>
         </div>
 
 
+    <h1><?php echo $heading_title; ?></h1>
 
 
-
-        <h1><?php echo $heading_title; ?></h1>
     <?php if ($thumb || $description) { ?>
     <div class="category-info">
         <?php if ($thumb) { ?>
@@ -47,7 +37,7 @@
     </div>
     <?php } ?>
     <?php if ($categories) { ?>
-    <h2><?php echo $text_refine; ?></h2>
+    <h2><?php //echo $text_refine; ?></h2>
     <div class="category-list">
         <?php if (count($categories) <= 5) { ?>
         <ul>
@@ -96,7 +86,77 @@
         </div>
     </div>
     <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>
-    <div class="product-list">
+
+
+
+        <div class="table-list">
+            <table width="100%" cellspacing="0" border="0">
+                <thead>
+                <tr>
+                    <th class="th01">
+                        <div>Part#</div>
+                    </th>
+                    <th class="th02">
+                        <div>制造商</div>
+                    </th>
+                    <th class="th03">
+                        <div>说明</div>
+                    </th>
+                    <th class="th04">
+                        <div>库存</div>
+                    </th>
+                    <th class="th05">
+                        <div>价格</div>
+                    </th>
+                    <th class="th06">
+                        <div>购买</div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <?php foreach ($products as $product): ?>
+                    <tr class="tr01">
+                        <td class="th01">
+                            <div>
+                                <a href="#"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+                            </div>
+                        </td>
+                        <td class="th02">
+                            <div>Texas Instruments</div>
+                        </td>
+                        <td class="th03">
+                            <div>
+                                <p>Dual Transmitter/Receiver PS-232 16-PinTSSOP T/R</p>
+                                <div class="more-ms">
+                                    <span class="lt">RoHS:</span>
+                                    <div class="lt lt-r">
+                                        <p>Europe:Yes</p>
+                                        <p>China:Yes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php echo $product['description']; ?>
+                        </td>
+                        <td class="th04">
+                            <div>2000</div>
+                        </td>
+                        <td class="th05">
+                            <div><?php echo $product['price']; ?></div>
+                        </td>
+                        <td class="th06 buy-button">
+                            <div><a class="buy" title="添加到购物车" href="#">放入购物车</a></div><br />
+                            <div><a class="buy" title="购买" href="#">购买</a></div>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <!--
         <?php foreach ($products as $product) { ?>
         <div>
             <?php if ($product['thumb']) { ?>
@@ -127,7 +187,7 @@
             <div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
         </div>
         <?php } ?>
-    </div>
+    -->
     <div class="pagination"><?php echo $pagination; ?></div>
     <?php } ?>
     <?php if (!$categories && !$products) { ?>

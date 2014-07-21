@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="catalog/view/theme/ictree/stylesheet/style-min.css" />
     <link rel="stylesheet" type="text/css" href="catalog/view/theme/ictree/stylesheet/class.css" />
     <link rel="stylesheet" type="text/css" href="catalog/view/theme/ictree/stylesheet/public.css" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/ictree/stylesheet/home.css" />
 
     <?php foreach ($styles as $style) { ?>
     <link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />

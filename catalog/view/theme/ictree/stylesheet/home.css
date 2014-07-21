@@ -147,7 +147,7 @@
 	text-align: center;
 	color: #fff;
 	background: #e4393c;
-	background-image: url(../images/button.png);
+	background-image: url(../image/button.png);
 	background-repeat: no-repeat;
 	border: none;
 	overflow: hidden;
@@ -167,7 +167,7 @@
 	margin-left: 10px;
 	width: 72px;
 	height: 37px;
-	background-image: url(../images/button.png);
+	background-image: url(../image/button.png);
 	background-repeat: no-repeat;
 	background-position: 0 -42px;
 	line-height: 1000px;
@@ -181,7 +181,7 @@
 	margin-left: 10px;
 	width: 88px;
 	height: 37px;
-	background-image: url(../images/button.png);
+	background-image: url(../image/button.png);
 	background-position: 0 -88px;
 	background-repeat: no-repeat;
 	line-height: 1000px;
